@@ -1,0 +1,21 @@
+@import './colours';
+
+.button {
+  padding: 8px 25px;
+  color: $text-color;
+  background-color: $light-background-color;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border: 2px solid $text-color;
+  border-radius: 5px;
+  font-size: 1em;
+  font-weight: 600;
+
+  transition: all 0.25s;
+
+  &:hover {
+    background-color: $text-color;
+    color: $light-background-color;
+  }
+}

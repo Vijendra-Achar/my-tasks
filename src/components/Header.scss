@@ -1,36 +1,44 @@
 @import '../scss/colours';
 
 .header {
-  height: 6vh;
+  height: 8vh;
   background-color: $light-background-color;
 
   &-logo {
-    width: 42px;
-    height: 42px;
+    width: 38px;
+    height: 38px;
     margin: 0 15px 0 0;
   }
 
-  &-title {
+  &-search {
+    &-field {
+      display: flex;
+    }
+    position: relative;
+
+    padding: 8px 15px;
+    border-radius: 5px;
+
+    width: 25vw;
     font-size: 1.75em;
+
+    background-color: $lighter-background-color;
+
+    transition: all 0.25s;
+
+    border: none;
+    cursor: text;
+    outline: none;
+
+    color: $text-color;
+
+    &:focus {
+      background-color: $text-color;
+      color: $background-color;
+    }
   }
-}
 
-.button {
-  padding: 8px 25px;
-  color: $text-color;
-  background-color: $light-background-color;
-  outline: none;
-  border: none;
-  cursor: pointer;
-  border: 2px solid $text-color;
-  border-radius: 5px;
-  font-size: 1em;
-  font-weight: 600;
-
-  transition: all 0.25s;
-
-  &:hover {
-    background-color: $text-color;
-    color: $light-background-color;
+  &-title {
+    font-size: 1.5em;
   }
 }
