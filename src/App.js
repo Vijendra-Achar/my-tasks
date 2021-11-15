@@ -5,7 +5,7 @@ import { Route, Routes } from 'react-router-dom';
 import Home from './pages/Home/Home.jsx';
 
 import './App.scss';
-import './scss/_utillities.scss';
+import './scss/_utilities.scss';
 
 function App() {
   return (

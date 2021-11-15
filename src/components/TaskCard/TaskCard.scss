@@ -1,0 +1,37 @@
+@import './../../scss/colours';
+.taskcard {
+  height: fit-content;
+  max-width: 32%;
+
+  border: 1px solid $lighter-background-color;
+  border-radius: 10px;
+
+  transition: all 0.25s;
+
+  margin: 2.5vh 0;
+
+  &.complete {
+    text-decoration: line-through;
+  }
+
+  &:hover {
+    border: 1px solid $text-color;
+    cursor: pointer;
+  }
+
+  &-check-mark {
+    margin: 2.5vh 0;
+  }
+
+  &-title {
+    font-size: 1.5em;
+    font-weight: 800;
+    margin: 35px;
+  }
+
+  &-body {
+    line-height: 1.5;
+    font-size: 1.25em;
+    margin: 35px;
+  }
+}

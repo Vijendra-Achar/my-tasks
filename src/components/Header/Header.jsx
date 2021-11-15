@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import AppLogo from '../../assets/todo.svg';
 
 import './Header.scss';
-import '../../scss/_utillities.scss';
+import '../../scss/_utilities.scss';
 import '../../scss/_material-button.scss';
 
 function Header() {
