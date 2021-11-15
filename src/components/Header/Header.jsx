@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 
-import AppLogo from '../assets/todo.svg';
+import AppLogo from '../../assets/todo.svg';
 
 import './Header.scss';
-import '../scss/_utillities.scss';
-import '../scss/_material-button.scss';
+import '../../scss/_utillities.scss';
+import '../../scss/_material-button.scss';
 
 function Header() {
   const [searchText, setSearchText] = useState('');
@@ -37,7 +37,7 @@ function Header() {
 
         {/* Right side of the header */}
         <div className="header-controls">
-          <button className="button">Login</button>
+          <button className="button">Sign In</button>
         </div>
       </div>
     </div>

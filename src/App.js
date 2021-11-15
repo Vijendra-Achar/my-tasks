@@ -1,8 +1,8 @@
-import Header from './components/Header';
+import Header from './components/Header/Header';
 
 import { Route, Routes } from 'react-router-dom';
 
-import Home from './pages/Home.jsx';
+import Home from './pages/Home/Home.jsx';
 
 import './App.scss';
 import './scss/_utillities.scss';
