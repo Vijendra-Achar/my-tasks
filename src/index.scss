@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;700&family=Roboto:wght@300;400;700&display=swap');
 
 @import './scss/colours';
 
@@ -6,7 +6,7 @@ body {
   background-color: $background-color;
   color: $text-color;
   margin: 0;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

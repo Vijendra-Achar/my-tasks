@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 
-import axios from 'axios';
+import { getJSONplaceHolderComments } from '../../apiCalls/axios.js';
 
-import TaskCard from '../../components/TaskCard/TaskCard';
+import Sections from './../../components/Sections/Sections.jsx';
 
 import './Home.scss';
 
@@ -14,21 +14,18 @@ function Home() {
   useEffect(() => {
     console.log('Use effect is called');
 
-    axios
-      .get('https://jsonplaceholder.typicode.com/comments')
+    getJSONplaceHolderComments()
       .then((data) => {
-        console.log('The Todo data', data);
-
-        setTodos(data.data);
+        setTodos(data);
       })
       .catch((error) => {
-        console.error('An error occured while fetching the todos -> ', error);
+        console.log('Home page error -> ', error);
       });
   }, []);
 
   return (
-    <div className="home container flex flex-row flex-row-wrap justify-space-between ">
-      {todos && todos.length > 0 && todos.map((todo) => <TaskCard key={todo.id} todo={todo} />)}
+    <div className="home">
+      <Sections todos={todos} />
     </div>
   );
 }
