@@ -10,7 +10,7 @@ function Sections({ todos }) {
       <div className="sections-inprogress">
         <div className="sections-heading">Things you've gotta do 🧾</div>
         <div className="home container flex flex-row flex-row-wrap justify-space-between ">
-          {todos && todos.length > 0 && todos.map((todo) => <TaskCard key={todo.id} todo={todo} />)}
+          {todos && todos.length > 0 && todos.map((todo) => <TaskCard key={todo.taskId} todo={todo} />)}
         </div>
       </div>
       <div className="sections-completed">

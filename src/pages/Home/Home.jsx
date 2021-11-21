@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 
 import { getJSONplaceHolderComments } from '../../apiCalls/axios.js';
 
+import { getTasks } from './../../apiCalls/firebase/firebase-firestore.js';
+
 import Sections from './../../components/Sections/Sections.jsx';
 
 import './Home.scss';
@@ -14,8 +16,9 @@ function Home() {
   useEffect(() => {
     console.log('Use effect is called');
 
-    getJSONplaceHolderComments()
+    getTasks()
       .then((data) => {
+        console.log('The Final Todo data', data);
         setTodos(data);
       })
       .catch((error) => {
