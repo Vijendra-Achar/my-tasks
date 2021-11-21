@@ -1,0 +1,26 @@
+.login {
+  height: calc(100vh - 8vh);
+
+  &-title {
+    font-size: 2em;
+    font-weight: 700;
+    margin: 10px 0;
+  }
+
+  &-subtitle {
+    font-size: 1.3em;
+  }
+
+  &-container {
+    height: fit-content;
+    width: 30vw;
+  }
+
+  &-textfield {
+    margin: 25px 0;
+  }
+
+  &-text-container {
+    margin: 2.5em 0;
+  }
+}

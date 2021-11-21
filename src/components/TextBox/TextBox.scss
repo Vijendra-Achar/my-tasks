@@ -1,0 +1,55 @@
+@import './../../scss/colours';
+
+.textbox {
+  &-container {
+    position: relative;
+    font-size: 1em;
+
+    padding-top: 20px;
+    margin-bottom: 20px;
+
+    input,
+    select {
+      border: none;
+      border: 2px solid $text-color;
+      appearance: none;
+      padding: 15px;
+      border-radius: 5px;
+      width: 350px;
+      outline: none;
+      font-size: 1em;
+      box-sizing: border-box;
+      border: 1px solid $text-color;
+      margin: 5px 0px;
+      background-color: $background-color;
+      color: $text-color;
+    }
+
+    .placeholder {
+      position: absolute;
+      left: 15px;
+      font-size: 1em;
+      top: calc(50% + 9px);
+      transform: translateY(-50%);
+      color: $text-color;
+      transition: all 0.3s ease-out;
+    }
+
+    & input:focus {
+      border: 1px solid $text-color;
+    }
+
+    & input:valid + .placeholder,
+    & input:focus + .placeholder,
+    & select:valid + .placeholder,
+    & select:focus + .placeholder {
+      top: 6px;
+      left: 15px;
+      font-size: 0.9em;
+
+      background-color: $background-color;
+      padding: 0px 5px;
+      color: $text-color;
+    }
+  }
+}
