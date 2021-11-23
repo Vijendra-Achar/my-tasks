@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react';
 
-import { getJSONplaceHolderComments } from '../../apiCalls/axios.js';
-
 import { getTasks } from './../../apiCalls/firebase/firebase-firestore.js';
 
 import Sections from './../../components/Sections/Sections.jsx';

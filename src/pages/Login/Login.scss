@@ -1,3 +1,5 @@
+@import './../../scss/colours';
+
 .login {
   height: calc(100vh - 8vh);
 
@@ -7,20 +9,49 @@
     margin: 10px 0;
   }
 
+  &-social {
+    margin: 45px 0 0 0;
+
+    & i {
+      margin: 0 5px;
+    }
+
+    .button {
+      width: 34%;
+    }
+  }
+
   &-subtitle {
     font-size: 1.3em;
   }
 
   &-container {
     height: fit-content;
-    width: 30vw;
+    width: 22.5vw;
   }
 
-  &-textfield {
+  &-input {
     margin: 25px 0;
   }
 
   &-text-container {
     margin: 2.5em 0;
+  }
+
+  &-divider {
+    position: relative;
+    width: 100%;
+  }
+
+  &-or {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background-color: $background-color;
+    padding: 10px;
+    font-weight: bold;
+  }
+
+  &-line {
+    z-index: 1;
   }
 }
